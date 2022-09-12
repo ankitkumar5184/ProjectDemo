@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20220912 21:32:18.492" rpa="false" schemaversion="3">
+<suite id="s1" name="TestCase" source="C:\Users\AnkitKumar\PycharmProjects\ProjectDemo\TestCaseS\TestCase.robot">
+<test id="s1-t1" name="Login In Website" line="13">
+<kw name="Open my Browser" library="Common" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${site}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220912 21:32:18.892" level="INFO">Opening browser 'chrome' to base url 'https://admin-demo.nopcommerce.com'.</msg>
+<status status="PASS" starttime="20220912 21:32:18.892" endtime="20220912 21:32:22.986"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220912 21:32:22.986" endtime="20220912 21:32:23.333"/>
+</kw>
+<status status="PASS" starttime="20220912 21:32:18.892" endtime="20220912 21:32:23.333"/>
+</kw>
+<kw name="Enter Login Credentials and verfiy the page" library="LoginPage">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_userName}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220912 21:32:23.336" level="INFO">Typing text 'admin@yourstore.com' into text field '//input[@name='Email']'.</msg>
+<status status="PASS" starttime="20220912 21:32:23.335" endtime="20220912 21:32:23.483"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>${txt_password}</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220912 21:32:23.484" level="INFO">Typing password into text field '//input[@type='password']'.</msg>
+<msg timestamp="20220912 21:32:23.532" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220912 21:32:23.576" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220912 21:32:23.483" endtime="20220912 21:32:23.576"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_signIn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220912 21:32:23.576" level="INFO">Clicking button '//button[@type='submit']'.</msg>
+<status status="PASS" starttime="20220912 21:32:23.576" endtime="20220912 21:32:29.207"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Dashboard</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220912 21:32:29.224" level="INFO">Current page contains text 'Dashboard'.</msg>
+<status status="PASS" starttime="20220912 21:32:29.207" endtime="20220912 21:32:29.225"/>
+</kw>
+<status status="PASS" starttime="20220912 21:32:23.335" endtime="20220912 21:32:29.225"/>
+</kw>
+<doc>This Test case do the login into the website</doc>
+<tag>Functional</tag>
+<status status="PASS" starttime="20220912 21:32:18.891" endtime="20220912 21:32:29.225"/>
+</test>
+<test id="s1-t2" name="Adding Customer" line="18">
+<kw name="Open my Browser" library="Common" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${site}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220912 21:32:29.228" level="INFO">Opening browser 'chrome' to base url 'https://admin-demo.nopcommerce.com'.</msg>
+<status status="PASS" starttime="20220912 21:32:29.228" endtime="20220912 21:32:32.418"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220912 21:32:32.419" endtime="20220912 21:32:32.552"/>
+</kw>
+<status status="PASS" starttime="20220912 21:32:29.227" endtime="20220912 21:32:32.553"/>
+</kw>
+<kw name="Enter Login Credentials and verfiy the page" library="LoginPage">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_userName}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220912 21:32:32.557" level="INFO">Typing text 'admin@yourstore.com' into text field '//input[@name='Email']'.</msg>
+<status status="PASS" starttime="20220912 21:32:32.557" endtime="20220912 21:32:32.727"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>${txt_password}</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220912 21:32:32.728" level="INFO">Typing password into text field '//input[@type='password']'.</msg>
+<msg timestamp="20220912 21:32:32.794" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220912 21:32:32.844" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220912 21:32:32.727" endtime="20220912 21:32:32.845"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_signIn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220912 21:32:32.845" level="INFO">Clicking button '//button[@type='submit']'.</msg>
+<status status="PASS" starttime="20220912 21:32:32.845" endtime="20220912 21:32:38.081"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Dashboard</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220912 21:32:38.126" level="INFO">Current page contains text 'Dashboard'.</msg>
+<status status="PASS" starttime="20220912 21:32:38.081" endtime="20220912 21:32:38.127"/>
+</kw>
+<status status="PASS" starttime="20220912 21:32:32.556" endtime="20220912 21:32:38.127"/>
+</kw>
+<kw name="Adding Customer and Verfying" library="AddUser">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${btn_customers}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220912 21:32:38.129" level="INFO">Clicking element '//a[@href='#']//p[contains(text(),'Customers')]'.</msg>
+<status status="PASS" starttime="20220912 21:32:38.128" endtime="20220912 21:32:38.230"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${btn_customers1}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220912 21:32:38.231" level="INFO">Clicking element '//a[@href='/Admin/Customer/List']//p[contains(text(),'Customers')]'.</msg>
+<status status="PASS" starttime="20220912 21:32:38.230" endtime="20220912 21:32:41.633"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${btn_addNew}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220912 21:32:41.634" level="INFO">Clicking element '//a[@class='btn btn-primary']'.</msg>
+<status status="PASS" starttime="20220912 21:32:41.634" endtime="20220912 21:32:49.089"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_mail}</arg>
+<arg>${mail}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220912 21:32:49.089" level="INFO">Typing text 'abc@gmail.com' into text field 'id:Email'.</msg>
+<status status="PASS" starttime="20220912 21:32:49.089" endtime="20220912 21:32:49.328"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_pwd}</arg>
+<arg>${pwd}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220912 21:32:49.329" level="INFO">Typing text '12345' into text field 'name:Password'.</msg>
+<status status="PASS" starttime="20220912 21:32:49.328" endtime="20220912 21:32:49.494"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_fistname}</arg>
+<arg>${firstname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220912 21:32:49.495" level="INFO">Typing text 'anil' into text field 'name:FirstName'.</msg>
+<status status="PASS" starttime="20220912 21:32:49.495" endtime="20220912 21:32:49.622"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_lastname}</arg>
+<arg>${lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220912 21:32:49.623" level="INFO">Typing text 'kumar' into text field 'name:LastName'.</msg>
+<status status="PASS" starttime="20220912 21:32:49.622" endtime="20220912 21:32:49.767"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_dob}</arg>
+<arg>${dob}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220912 21:32:49.768" level="INFO">Typing text '10/6/2000' into text field 'id:DateOfBirth'.</msg>
+<status status="PASS" starttime="20220912 21:32:49.768" endtime="20220912 21:32:49.925"/>
+</kw>
+<status status="PASS" starttime="20220912 21:32:38.128" endtime="20220912 21:32:49.925"/>
+</kw>
+<doc>This Test case add the new customer</doc>
+<tag>Functional</tag>
+<status status="PASS" starttime="20220912 21:32:29.226" endtime="20220912 21:32:49.929"/>
+</test>
+<status status="PASS" starttime="20220912 21:32:18.495" endtime="20220912 21:32:49.932"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="2" fail="0" skip="0">Functional</stat>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="TestCase">TestCase</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
